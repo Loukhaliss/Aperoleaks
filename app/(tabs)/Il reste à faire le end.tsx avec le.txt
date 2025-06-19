@@ -1,0 +1,13 @@
+Il reste à faire le end.tsx avec le tableau des scores final + adapter le serveur pour que ça fonctionne conséquence (enregistrer les data de la game style nbvotes)
+Relire la fin de discussion vec chat
+
+
+
+Je vais commencer par t'envoyer les phrases et gages exact pour que tu puisses directement avoir le bon code. Je t'en enverrai sûrement d'autres plus tard que tu pourras incorporer en plus. A chaque fois je vais te donner ce schéma : phrase (celle à mettre avant l'affichage du profil) | gage1 (à mettre après l'affichage du profil)| gage2 | … .A chaque fois il faudra donc que l'algo choisisse un des gages (seulement 1) pris aléatoirement parmi ceux associés à la phrase, car le but c'est qu'il y ait plusieurs gages différents pour chaque réponse pour ne pas qu'on s'y attende à chaque partie.
+
+Phrases : 
+
+- L'ivrogne de service est (joueur qui a bu le plus de gorgées) : | Pas de pitié ici. Bois en 1 de plus ☠️ | Distribue 3 gorgées à une seule personne. La vengeance est un plat qui se mange froid 🧛 | Autant s'enquiller jusqu'au bout : bois entre 1 et 3 gorgées et choisis une personne qui devra boire le double 🤮
+
+- Le sniper est (joueur qui a donné le plus de bonnes réponses) : | Headshot 🎯 Donne une gorgée
+
