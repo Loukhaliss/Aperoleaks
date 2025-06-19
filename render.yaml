@@ -4,8 +4,6 @@ services:
     env: node
     region: oregon
     branch: main
-    rootDir: Aperoleaks-server
-    buildCommand: "npm install"
-    startCommand: "node server.js"
+    buildCommand: cd Aperoleaks-server && npm install
+    startCommand: node Aperoleaks-server/server.js
     autoDeploy: true
-
