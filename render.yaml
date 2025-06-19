@@ -2,8 +2,9 @@ services:
   - type: web
     name: aperoleaks-backend
     env: node
-    region: oregon  # change selon ta région si besoin
-    branch: main    # branche github à déployer
-    buildCommand: "cd Aperoleaks-server && npm install"
-    startCommand: "node Aperoleaks-server/server.js"
+    region: oregon  # modifie selon ta localisation si besoin
+    branch: main    # la branche GitHub à surveiller
+    rootDir: Aperoleaks-server
+    buildCommand: "npm install"
+    startCommand: "node server.js"
     autoDeploy: true
