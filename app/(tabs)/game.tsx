@@ -13,7 +13,12 @@ import { useUserStore } from 'C:/Users/lucas/OneDrive/Bureau/Projets/Apéroleak/
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import io from 'socket.io-client';
 
-const socket = io("http://192.168.1.131:3000");
+const SOCKET_URL = __DEV__
+  ? "http://192.168.1.131:3000"  // dev local
+  : "https://aperoleaks-backend.onrender.com";  // prod Render
+
+const socket = io(SOCKET_URL);
+
 
 export default function GameScreen() {
   const { pseudo } = useUserStore();
