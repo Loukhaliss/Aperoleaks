@@ -1,9 +1,11 @@
 {
-  "name": "aperoleaks",
+  "name": "aperoleaks-server",
   "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-    "start": "expo start",
-    ...
+    "start": "node server.js"
   },
-  ...
+  "dependencies": {
+    "socket.io": "^4.8.1"
+  }
 }
