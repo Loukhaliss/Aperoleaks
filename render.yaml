@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aperoleaks-backend
+    env: node
+    region: oregon
+    branch: main
+    rootDir: Aperoleaks-server
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    autoDeploy: true
+
